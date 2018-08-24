@@ -10,4 +10,18 @@ function main( ){
     
     nv.display();
     
+    
+    // DEMO //
+    setTimeout(()=>{
+        nn.neurons.input[0].value = 0.3;
+        nn.neurons.input[1].value = 0.8;
+        nn.neurons.input[2].value = 0.1;
+        nn.neurons.input[3].value = 0.9;
+    },1000);
+    
+    setTimeout(()=>{
+        nn.neurons.hidden[0].connections[0].weight = 0.1;
+        nn.neurons.hidden[0].connections[1].weight = 0.9;
+    },2000);
+    
 }
